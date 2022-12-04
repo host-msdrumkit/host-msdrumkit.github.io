@@ -2,6 +2,11 @@ h1{
   text-decoration: underline;
 }
 
+body{
+  background: #FF0000 url("media/background.png") no-repeat fixed center;
+}
+
+
 .popup {
   position: relative;
   display: inline-block;
