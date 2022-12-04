@@ -3,7 +3,8 @@ h1{
 }
 
 body{
-  background: url("media/background.png") no-repeat fixed center;
+  background: url("media/background.png") fixed center no-repeat;
+  background-size: 100% 100%;
 }
 
 
