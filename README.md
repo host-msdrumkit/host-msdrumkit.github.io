@@ -1,4 +1,4 @@
-### DRUMKIT PROJECT WEBSITE
+# Drumkit Project Website
 
 This repository includes all the files used for the website to present (preferably) on **Tuesday the 13<sup>th</sup> of December**. 
 The layout of the files is the following:
@@ -10,4 +10,4 @@ In case you want to touch some code and are not sure how HTML/CSS work, [in this
 
 Any suggestions are welcome and you may type them below, send e-mails to the team members, discuss them in person or send a text message to the group.
 
-# Suggestions
+### Suggestions
