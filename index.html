@@ -1,38 +1,30 @@
+<!DOCTYPE html>
 <html lang = "en">
-  <meta charset = "UTF-8">
   <head>
-    <title> Lufthansa DRUMS </title>
+    <meta charset = "utf-8">
+    <title> Lufthansa Drums </title>
     <link rel = "stylesheet" type = "text/css" href = "style.css">
-    <script type = "text/javascript" src = "js/jquery-3.6.1.min.js"></script>
-    <script type = "text/javascript" src = "js/jquery.maphilight.min.js"></script>
-    <script type = "text/javascript">
-      jQuery(function(){
-        jQuery('.drumkitmap').maphilight();
-      });
-    </script>
   </head>
   <body>
-      <h1> Building a piezoelectric-based drumkit </h1>
-      <h2> Materials Physics Project, group 2 </h2>
-      <center>
-        <img src = "media/tryres.png" class = "drumkitmap" alt = "drumkit diagram" usemap = "#drumkit">
-        <!-- <img src="tryres.png" usemap="#drumkit"> -->
-        <map name="drumkit">
-          <div class="popup" onmouseup="myFunction()">
-            <area class = "drum" id = "snare" target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Snare_drum" coords="224,303,216,302,209,301,202,299,195,297,188,295,182,292,175,289,169,285,163,281,158,276,153,271,150,265,147,259,146,252,147,247,149,240,152,234,155,229,160,224,165,220,170,216,175,213,181,210,187,208,192,206,197,205,203,203,209,202,215,201,221,200,227,200,234,199,239,199,234,199,247,199,254,200,261,201,267,202,273,203,279,205,287,207,292,210,297,212,302,215,307,218,312,222,315,224,318,228,320,231,324,237,326,243,328,248,327,255,326,260,323,266,319,273,314,279,309,284,303,287,298,290,292,293,284,296,278,299,268,301,258,303,249,304,241,304,232,304" shape="poly">
-                <span class="popuptext" id="myPopup">A Simple Popup!</span>
-            </div>
-            <area class = "drum" id = "kick" target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Bass_drum" coords="272,201,278,196,284,191,291,186,296,183,303,179,309,177,315,174,321,172,327,170,334,168,340,167,347,166,353,166,360,166,366,166,373,167,379,168,385,169,391,170,396,172,400,175,405,178,410,180,416,182,421,184,427,186,432,187,438,191,442,195,448,200,452,204,456,209,460,214,464,219,467,223,470,229,473,235,476,241,478,247,480,253,481,258,482,264,483,270,483,276,483,283,482,290,481,297,480,303,478,310,476,316,473,323,470,328,467,334,463,339,460,344,456,348,452,352,448,356,444,360,440,363,436,366,432,369,427,372,422,375,417,378,413,380,408,381,407,374,306,375,305,377,302,376,296,374,290,370,284,366,279,362,274,358,269,353,264,348,261,344,256,338,253,333,250,328,247,322,244,316,243,311,242,305,247,304,252,303,257,303,262,302,267,301,271,300,276,299,281,298,288,295,294,292,299,289,304,286,309,283,314,279,318,274,322,268,325,263,327,257,328,250,326,244,324,238,321,233,318,227,314,222,309,218,303,214,297,211,290,207,284,205,277,203" shape="poly">
-            <area class = "cymbal" id = "crash1" target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Crash_cymbal" coords="178,106,170,106,161,105,154,104,146,103,138,102,131,100,123,97,117,94,112,91,107,87,102,83,97,78,94,72,93,65,94,58,97,52,101,47,106,43,112,39,119,35,125,32,133,29,140,27,146,26,154,25,160,24,167,24,173,24,179,24,185,24,192,24,199,25,206,26,212,28,219,30,223,31,229,33,235,36,241,40,246,44,251,49,254,53,257,59,258,64,257,71,255,76,251,82,245,87,240,91,234,94,228,97,221,100,215,102,208,104,201,105,193,106,185,106" shape="poly">
-            <area class = "cymbal" id = "hihat" target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Hi-hat" coords="38,155,31,153,22,151,15,149,9,146,4,142,2,139,2,133,1,126,5,121,11,118,17,115,23,113,29,112,35,111,41,110,47,109,54,108,63,107,70,107,78,107,85,107,91,107,99,107,106,107,113,108,119,109,126,110,132,111,138,112,145,113,151,115,155,117,161,120,165,123,167,125,167,129,166,133,168,137,164,143,158,146,152,148,146,150,139,152,131,154,124,155,117,156,109,157,102,157,94,157,86,157,77,157,67,157,58,157,50,156,43,156" shape="poly">
-            <area class = "cymbal" id = "ride" target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Ride_cymbal" coords="566,114,555,114,545,113,535,111,526,109,517,107,509,104,500,100,493,97,486,93,480,88,475,83,470,77,466,71,464,65,463,58,464,51,466,45,469,39,473,34,478,29,483,25,488,21,494,18,500,15,507,12,515,9,522,7,529,5,535,4,542,3,549,2,556,1,562,1,569,1,575,1,582,1,589,2,595,3,602,4,608,5,614,7,620,9,625,11,630,13,635,15,639,17,645,20,650,24,654,27,660,33,665,39,668,45,670,51,670,56,669,62,668,68,665,74,662,79,658,84,653,88,648,92,643,96,637,99,631,101,624,104,617,107,610,109,603,111,596,112,589,113,582,114,574,114" shape="poly">
-        </map>
-      </center>
-      <script>
-      function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-      </script>
+    <h1> Building a piezoelectric-based drumkit </h1>
+    <h2> Materials Physics Project, group 2 </h2>
+    <a href = "drum.html"> Drums </a>
+    <center>
+    <div class = "piezointro">
+        <div style="display: block; text-align: justify; margin: 25px 30px;">
+          <h3> &nbsp;&nbsp;&nbsp;&nbsp; Why piezoelectrics? </h3>
+          <p>
+          &nbsp;&nbsp; Piezoelectric materials have special properties which result highly useful for this project.
+          See, piezoelectrics are specific materials which, when brought under any sort of mechanical stresses,
+          originate electrical charges. This way, piezoelectric materials conform an easy way to convert mechanical
+          energy into electricity. <!-- HOW DOES THIS WORK? -->
+          </p>
+          <p>
+          &nbsp;&nbsp; Now, how come the piezoelectric effect result indeed handful for the project? In the end, an electronic drumkit
+          consists in a bunch of piezoelectrics
+          </p>
+        </div>
+    </div>
+  </center>
   </body>
 </html>
