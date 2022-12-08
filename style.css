@@ -1,28 +1,72 @@
 /*RESPONSIVENESS SECTION.*/
 
 @media (max-width: 800px) {
+  ul.navbut li.nav-lg a{
+    display: none;
+  }
+
+  ul.navbut li.nav-sm a{
+    display: block;
+  }
+
   div.piezointro {
     width: 75%;
   }
 
 }
+
 @media (min-width: 800px){
+  ul.navbut li.nav-lg a{
+    display: block;
+  }
+
+  ul.navbut li.nav-sm a{
+    display: none;
+  }
+
   div.piezointro {
     width: 50%;
   }
 
 }
 
-
-h1{
+h1, h2{
+  text-align: center;
   text-decoration: underline;
 }
+
+ul.navbut{
+    list-style-type: None;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FDA172;
+    border-radius: 4px;
+}
+
+ul.navbut li, button.navtub{
+    float: left;
+}
+
+ul.navbut li a{
+    color: white;
+    text-align: center;
+    text-decoration: None;
+    padding: 14px 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover{
+    background-color: #DD571C;
+}
+
 body{
   background: url("media/background.png") fixed center no-repeat;
   background-size: 100% 100%;
 }
 
 div.piezointro{
+  margin-top: 50px;
   background-color: linen;
   border-radius: 50px;
   padding: 20px 10px;
