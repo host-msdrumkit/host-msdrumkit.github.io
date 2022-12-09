@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang = "en">
+
   <head>
     <meta charset = "utf-8">
     <title> Lufthansa DRUMS </title>
     <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script type = "text/javascript" src = "js/dropdown.js"></script>
   </head>
+
   <body>
     <h1> Building a piezoelectric-based drumkit </h1>
     <h2> Materials Physics Project, group 2 </h2>
+    <!-- NAVBAR & DROPDOWN MENU -->
     <div class = "navbar">
-        <ul class = "navbut">
-            <li class = "nav-lg"> <a> Home </a> </li>
-            <li class = "nav-lg"> <a href = "drum.html"> The Project </a> </li>
-            <li class = "nav-lg"> <a href = ""> Commercial Kits </a> </li>
-            <li class = "nav-lg"> <a href = ""> The Team </a> </li>
-            <li class = "nav-sm"> <a> ... </a>
-        </ul>
+      <div class = "navbar-lg">
+        <a class = "nav-lg" href = "index.html"> Home </a>
+        <a class = "nav-lg" href = "drum.html"> The Project </a>
+        <a class = "nav-lg" href = ""> Commercial Kits </a>
+        <a class = "nav-lg" href = ""> The Team </a>
+      </div>
+      <div class = "dropdown">
+        <button class = "nav-sm" onclick = "toggle()"> ... </button>
+        <div id = "dropbuttons" class = "dropdown-content" style = "display:none">
+            <a class = "dropb" href = "index.html"> Home </a>
+            <a class = "dropb" href = "drum.html"> The Project </a>
+            <a class = "dropb" href = ""> Commercial Kits </a>
+            <a class = "dropb" href = ""> The Team </a>
+        </div>
+      </div>
     </div>
+    <!-- END NAVBAR - DROPDOWN MENU -->
+
     <center>
     <div class = "piezointro">
         <div style="display: block; text-align: justify; margin: 25px 30px;">
@@ -34,6 +48,6 @@
           </p>
         </div>
     </div>
-  </center>
+    </center>
   </body>
 </html>

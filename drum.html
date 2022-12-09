@@ -5,16 +5,34 @@
     <link rel = "stylesheet" type = "text/css" href = "style.css">
     <script type = "text/javascript" src = "js/jquery-3.6.1.min.js"></script>
     <script type = "text/javascript" src = "js/jquery.maphilight.min.js"></script>
-    <script type = "text/javascript">
-      jQuery(function(){
-        jQuery('.drumkitmap').maphilight();
-      });
-    </script>
+    <script type = "text/javascript" src = "js/map.js"></script>
+    <script type = "text/javascript" src = "js/dropdown.js"></script>
   </head>
+
   <body>
       <h1> Building a piezoelectric-based drumkit </h1>
       <h2> Materials Physics Project, group 2 </h2>
+
+      <div class = "navbar">
+        <div class = "navbar-lg">
+          <a class = "nav-lg" href = "index.html"> Home </a>
+          <a class = "nav-lg" href = "drum.html"> The Project </a>
+          <a class = "nav-lg" href = ""> Commercial Kits </a>
+          <a class = "nav-lg" href = ""> The Team </a>
+        </div>
+        <div class = "dropdown">
+          <button class = "nav-sm" onclick = "toggle()"> ... </button>
+          <div id = "dropbuttons" class = "dropdown-content" style = "display:none">
+              <a class = "dropb" href = "index.html"> Home </a>
+              <a class = "dropb" href = "drum.html"> The Project </a>
+              <a class = "dropb" href = ""> Commercial Kits </a>
+              <a class = "dropb" href = ""> The Team </a>
+          </div>
+        </div>
+      </div>
+
       <center>
+        <div class = drummap-container> <!-- ARREGLAR ESTO, NO SE MUEVE XDD -->
         <img src = "media/tryres.png" class = "drumkitmap" alt = "drumkit diagram" usemap = "#drumkit">
         <!-- <img src="tryres.png" usemap="#drumkit"> -->
         <map name="drumkit">
@@ -27,6 +45,7 @@
             <area class = "cymbal" id = "hihat" target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Hi-hat" coords="38,155,31,153,22,151,15,149,9,146,4,142,2,139,2,133,1,126,5,121,11,118,17,115,23,113,29,112,35,111,41,110,47,109,54,108,63,107,70,107,78,107,85,107,91,107,99,107,106,107,113,108,119,109,126,110,132,111,138,112,145,113,151,115,155,117,161,120,165,123,167,125,167,129,166,133,168,137,164,143,158,146,152,148,146,150,139,152,131,154,124,155,117,156,109,157,102,157,94,157,86,157,77,157,67,157,58,157,50,156,43,156" shape="poly">
             <area class = "cymbal" id = "ride" target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Ride_cymbal" coords="566,114,555,114,545,113,535,111,526,109,517,107,509,104,500,100,493,97,486,93,480,88,475,83,470,77,466,71,464,65,463,58,464,51,466,45,469,39,473,34,478,29,483,25,488,21,494,18,500,15,507,12,515,9,522,7,529,5,535,4,542,3,549,2,556,1,562,1,569,1,575,1,582,1,589,2,595,3,602,4,608,5,614,7,620,9,625,11,630,13,635,15,639,17,645,20,650,24,654,27,660,33,665,39,668,45,670,51,670,56,669,62,668,68,665,74,662,79,658,84,653,88,648,92,643,96,637,99,631,101,624,104,617,107,610,109,603,111,596,112,589,113,582,114,574,114" shape="poly">
         </map>
+        </div>
       </center>
       <script>
       function myFunction() {
