@@ -124,3 +124,15 @@ div.drummapcontainer{
   position: absolute;
   top: 100px;
 }
+
+
+.falselink{
+  text-decoration: underline;
+  font-weight: bold;
+  color: darkblue;
+  cursor: pointer;
+}
+
+.falselink:active{
+  color: #DD571C;
+}
