@@ -138,16 +138,18 @@ div.piezointro{
 
 div.section{
   width: 70%;
+  text-align: justify;
+  padding: 40px 80px;
 
 }
 
 div.section p{
-  display: inline-block;
+  display: block;
 }
 
 
 .drumkitmap{
   display: inline-block;
   width: 250px;
-  float: left;
+  float: right;
 }
