@@ -1,15 +1,30 @@
 
 
 $(document).ready(function(){
-  $('#dkit').mapster({
+  $('#unaspad').mapster({
     isSelectable: false,
     scaleMap: true,
     fillColor: "990000",
     mapKey: 'alt',
     areas: [
-        {
-            mapKey: 'wood',
-        }
+      {
+        mapKey: 'wood'
+      }
+    ]
+  });
+});
+
+
+$(document).ready(function(){
+  $('#aspad').mapster({
+    isSelectable: false,
+    scaleMap: true,
+    fillColor: "008888",
+    mapKey: 'alt',
+    areas: [
+      {
+        mapKey: 'woodas'
+      }
     ]
   });
 });
