@@ -9,8 +9,14 @@
     display: none;
   }
 
-  div.piezointro {
+  div.piezointro, div.section {
     width: 75%;
+  }
+  .mapcontainer{
+    padding-left: 0;
+  }
+  .drumkitmap{
+    margin: 0 auto;
   }
 
 }
@@ -28,10 +34,12 @@
     display: none;
   }
 
-  div.piezointro {
+  div.piezointro, div.section {
     width: 50%;
   }
-
+  .mapcontainer{
+    padding-left: 40px
+  }
 }
 
 h1, h2{
@@ -147,9 +155,7 @@ div.section p{
   display: block;
 }
 
-
 .drumkitmap{
   display: inline-block;
   width: 250px;
-  float: right;
 }
