@@ -16,7 +16,8 @@ int highScore[PADS];
 byte note[PADS] = {36,37,47,43,48,54,66};
 bool hhpedal;
 
-int digitalPin = 2; //CAMBIAR EL NÚMERO DE PIN POR EL QUE TENGA EL PEDAL ENCHUFADO.
+int pedalPin = 2; //CAMBIAR EL NÚMERO DE PIN POR EL QUE TENGA EL PEDAL ENCHUFADO.
+int pedalVal;
 
 void setup() {
   MIDI.begin(MIDI_CHANNEL_OFF);
@@ -26,7 +27,7 @@ void setup() {
     highScore[x] = 0;
     timer[x] = 0;
   }
-  pinMode(digitalPin, INPUT); 
+  pinMode(digitalPin, INPUT_PULLUP); 
 
 }
 
@@ -45,8 +46,9 @@ void loop() {
     }
     else if (volume < threshold[x] && playing[x] == true) {
       //Serial.println(highScore[x], DEC);
-      if (x == 5){ //CAMBIAR 5 POR EL NÚMERO DEL HI-HAT (condición del hi-hat abierto)
-        if (digitalRead(2) == LOW){
+      if (x == 4){ //CAMBIAR 5 POR EL NÚMERO DEL HI-HAT (condición del hi-hat abierto)
+        pedalVal = digitalRead(pedalPin);
+        if (pedalVal == LOW){
           MIDI.sendNoteOn(56, highScore[x], CHANNEL); //CAMBIAR EL 56 POR LA NOTA DEL HIHAT ABIERTO!
           MIDI.sendNoteOff(56, 0, CHANNEL); // EL 56, LO MISMO QUE EN LA LÍNEA ANTERIOR
         }
