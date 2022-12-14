@@ -18,6 +18,9 @@
   .drumkitmap{
     margin: 0 auto;
   }
+  .info{
+    width: 80%;
+  }
 
 }
 
@@ -40,6 +43,15 @@
   .mapcontainer{
     padding-left: 40px
   }
+
+  .info{
+    float: right;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 50%;
+  }
+
+
 }
 
 h1, h2{
@@ -117,8 +129,9 @@ a.nav-lg:hover, button.nav-sm:hover, a.dropb:hover{
  /*GENERAL BODY ELEMENTS*/
 
 body{
-  background: url("media/background.png") fixed center no-repeat;
-  background-size: 100% 100%;
+  /*background: url("media/background.png") fixed center no-repeat;*/
+  /*background-size: 100% 100%;*/
+  background-color: #FFC394;
 }
 
 div.piezointro, div.section{
@@ -158,4 +171,9 @@ div.section p{
 .drumkitmap{
   display: inline-block;
   width: 250px;
+}
+
+.info{
+  text-align: justify;
+  margin-bottom: 20px;
 }
