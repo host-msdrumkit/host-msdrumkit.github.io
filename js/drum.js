@@ -29,6 +29,7 @@ function togglefoam() {
   }
 }
 
+
 function togglecork() {
   var x = document.getElementById("corkinfo");
   if (x.style.display === "none") {
@@ -148,6 +149,7 @@ function togglep() {
   }
 }
 
+
 function togglemodule() {
   var x = document.getElementById("elecinfo");
   if (x.style.display === "none") {
@@ -174,5 +176,56 @@ function togglemodule() {
 
   if (document.getElementById("pinfo").style.display === "block"){
     document.getElementById("pinfo").style.display = "none";
+  }
+}
+
+
+function toggledrums() {
+  var x = document.getElementById("padinfo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  if (document.getElementById("strinfo").style.display === "block"){
+    document.getElementById("strinfo").style.display = "none";
+  }
+
+  if (document.getElementById("crocinfo").style.display === "block"){
+    document.getElementById("crocinfo").style.display = "none";
+  }
+}
+
+
+function togglestrut() {
+  var x = document.getElementById("strinfo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  if (document.getElementById("padinfo").style.display === "block"){
+    document.getElementById("padinfo").style.display = "none";
+  }
+
+  if (document.getElementById("crocinfo").style.display === "block"){
+    document.getElementById("crocinfo").style.display = "none";
+  }
+}
+
+
+function togglecroc() {
+  var x = document.getElementById("crocinfo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  if (document.getElementById("padinfo").style.display === "block"){
+    document.getElementById("padinfo").style.display = "none";
+  }
+
+  if (document.getElementById("strinfo").style.display === "block"){
+    document.getElementById("strinfo").style.display = "none";
   }
 }

@@ -47,7 +47,8 @@
   .info{
     float: right;
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 180px;
+    margin-right: 80px;
     width: 50%;
   }
 
@@ -170,7 +171,7 @@ div.section p{
 
 .drumkitmap{
   display: inline-block;
-  width: 250px;
+  width: 350px;
 }
 
 .info{

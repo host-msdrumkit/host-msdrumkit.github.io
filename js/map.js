@@ -12,10 +12,7 @@ $(document).ready(function(){
       }
     ]
   });
-});
 
-
-$(document).ready(function(){
   $('#aspad').mapster({
     isSelectable: false,
     scaleMap: true,
@@ -26,5 +23,16 @@ $(document).ready(function(){
         mapKey: 'woodas'
       }
     ]
+  });
+
+  $('#drumkit').mapster({
+    isSelectable: false,
+    scaleMap: true,
+    fillColor: "33CC33",
+    mapKey: 'alt',
+    areas: [
+      {key : 'croc', fillColor : "d42e16", fillOpacity : 0.025}
+    ]
+
   });
 });

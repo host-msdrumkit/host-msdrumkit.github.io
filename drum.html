@@ -35,10 +35,39 @@
 
       <center>
       <div class = "section">
-          <h3> The Pad </h3>
-          <p> The pads may be the most interesting part of the drumkit from the point of view of materials, as they need to satisfy very specific requirements.</p>
-         <!-- ARREGLAR ESTO, NO SE MUEVE XDD -->
-        <p> Common electronic drumkit pads consist of an outer plastic shell covered by a rubber or mesh layer. Rubber pads are the most similar to our homemade. <br>
+      <h2> Our final product </h2>
+      <p> &nbsp;&nbsp; The final product is a somehow-playable prototype of a very limited electronic drumkit. It is deeply marked by two constraints: the available time, and especially the <strong> budget</strong>. For this reason, it is obvious that our drumkit cannot compete with professional producers like Yamaha or Roland. Nonetheless, our product makes a "fair enough", very economical alternative for drumming beginners.
+
+        The prototype would consist in a PVC structure to which 6 drum pads are attached. It includes an electronic module divided into a main processing unit (made with an arduino pico), in charge of analysing the pads being hit and the intensity of the hits and setting the sound and volume to be played at the speakers; and one piezo module per each pad, in charge of communicating the piezo signals to the processing unit. </p>
+      <p> &nbsp;&nbsp; For sound output, it requires connection to a computer or a sound card and some headphones or speakers. This electrical infrastructure is as limited owing to the budget of the students and the limited amount of time for the construction of the kit, as stated before. </p>
+
+        <div class = "mapcontainer">
+          <div id = "strinfo" class = "info" style = "display: none"> The structure consists of rigid <strong> PVC hollow tubes </strong> attached together with PVC joints. The hollow tubes make the drumkit very lightweight and can be easily detached. </div>
+          <div id = "padinfo" class = "info" style = "display: none"> The pads present a much more complex function than the structure, they consist on a <strong> cork surface, reinforced with wooden discs </strong> so that it does not bend when hit, and a <strong> piezoelectric disc </strong> that converts the mechanical stress of the hits to electrical signals which can then be read by the processing module.</div>
+          <div id = "crocinfo" class = "info" style = "display: none"> Crocs are not made out of plastic nor rubber, but a company-patented resine called <strong> <a href = "https://scienceline.org/2022/10/crocs-sustainability-plastic/"> croslite</a></strong>. </div>
+          <img src = media/drumkit.png id = "drumkit" class = "drumkitmap" alt = "built drumkit" usemap = "#drummap"> <!-- Consider making it bigger -->
+          <map name="drummap">
+            <area target="" alt="pad" title="snare" href="#" onclick = toggledrums() coords="287,493,293,483,301,474,316,465,328,461,341,458,355,455,368,455,384,459,394,465,402,475,409,482,417,504,411,521,402,531,391,539,375,543,360,548,344,549,332,549,318,547,304,540,296,533,289,524,286,514,286,504" shape="poly">
+            <area target="" alt="pad" title="tom3" href="#" onclick = toggledrums() coords="544,662,547,689,573,700,601,707,633,705,663,699,688,689,703,681,713,669,713,660,712,645,707,630,689,618,674,615,656,614,640,613,621,615,604,619,586,623,572,630,558,638,549,647" shape="poly">
+            <area target="" alt="pad" title="tom1" href="#" oncick  = toggledrums() coords="528,407,536,417,547,422,558,427,585,425,603,414,625,395,636,376,641,360,642,340,636,328,625,314,610,306,595,302,579,306,560,314,543,327,533,339,525,355,519,371,519,387,523,396" shape="poly">
+            <area target="" alt="pad" title="hihat" href="#" onclick = toggledrums() coords="108,401,110,417,115,430,131,441,146,445,167,446,186,446,201,445,217,439,231,431,239,422,244,412,244,392,239,381,232,371,220,364,205,360,190,359,175,359,161,360,149,363,135,368,123,373,115,381,109,391" shape="poly">
+            <area target="" alt="pad" title="crash" href="#" onclick = toggledrums() coords="414,154,425,169,437,178,456,184,474,182,493,175,508,165,520,154,526,140,532,126,532,112,526,96,512,79,499,71,478,69,461,71,443,79,431,87,419,100,412,118,410,132" shape="poly">
+            <area target="" alt="pad" title="ride" href="#" onclick = toggledrums() coords="769,248,791,273,800,283,835,274,874,257,898,242,917,222,929,207,945,185,955,169,952,152,944,142,939,127,917,117,898,118,879,122,859,134,839,148,824,161,801,181,785,200,774,220,768,235" shape="poly">
+            <area target="" alt="struct" title="struct1" href="#" onclick = togglestrut() coords="395,1141,422,1141,431,878,432,879,432,857,434,849,446,840,448,846,462,836,461,831,478,822,504,808,617,748,657,725,672,720,674,712,692,703,710,694,720,688,755,667,796,647,788,669,783,690,725,897,730,905,739,906,747,906,822,644,827,622,832,620,834,602,832,602,835,583,843,546,850,511,858,475,865,450,885,352,899,288,902,276,906,273,909,253,907,254,907,244,905,236,896,244,884,252,872,260,868,284,861,322,853,363,841,423,833,460,829,478,816,472,805,470,790,463,777,456,631,387,625,397,618,404,642,416,794,494,793,498,817,507,821,509,806,587,801,587,801,611,793,613,778,621,779,623,759,634,727,654,715,663,712,670,703,679,686,689,665,700,646,703,620,707,607,716,594,724,453,796,448,796,430,806,421,812,410,824,404,839,402,859,401,876" shape="poly">
+            <area target="" alt="struct" title="struct2" href="#" onclick = togglestrut() coords="474,657,479,661,486,660,490,658,490,634,490,576,490,512,490,486,493,466,496,454,496,444,494,429,494,414,496,402,493,393,493,370,492,355,496,343,524,358,531,339,523,334,511,328,511,325,496,320,496,305,494,304,489,178,481,180,472,182,473,303,471,304,471,323,473,327,472,412,463,417,456,421,371,455,382,457,393,464,407,460,426,452,440,446,456,440,465,434,472,435,476,437" shape="poly">
+            <area target="" alt="struct" title="struct3" href="#" onclick = togglestrut() coords="168,448,176,449,185,448,193,446,191,481,192,519,197,519,203,523,220,515,246,504,265,496,278,491,277,488,291,484,286,492,285,503,285,511,266,518,244,526,230,532,216,538,215,540,196,546,196,554,197,565,195,569,196,587,199,624,199,634,199,642,191,632,182,631,176,568,173,552,176,551,174,541,172,523,173,522,172,523" shape="poly">
+            <area target="" alt="croc" title="croc" href="#" onclick = togglecroc() coords="34,876,41,908,47,932,57,945,74,954,92,956,107,949,117,937,123,927,119,908,115,889,112,874,105,862,103,846,92,841,72,847,61,849,49,846,39,841,35,859" shape="poly">
+            <area target="" alt="croc" title="croc2" href="#" onclick = togglecroc() coords="87,736,92,754,113,751,135,737,153,733,168,729,161,709,145,690,131,686,132,698,129,712,120,719,101,723,91,720,85,724" shape="poly">
+          </map>
+
+        </div>
+      </div>
+
+
+      <div class = "section">
+        <h3> The Pad </h3>
+          <p> &nbsp;&nbsp; The pads may be the most interesting part of the drumkit from the point of view of materials, as they need to satisfy very specific requirements.</p>
+          <p> &nbsp;&nbsp; Common electronic drumkit pads consist of an outer plastic shell covered by a rubber or mesh layer. Rubber pads are the most similar to our homemade. <br>
           Bear in mind the pad needs to satisfy several functions:
           <ul>
             <li> Detect the hits and deliver the signal to the electronic module (this is the piezoelectric function) </li>
@@ -47,7 +76,7 @@
             <li> Protect the piezoelectric from any damage from hitting, etc.</li>
           </ul>
         </p>
-        <p> Down here you can find some images of both an unassembled and assembled pad. Check the different items on the pad by clicking on them! </p>
+        <!-- <p> &nbsp;&nbsp; Down here you can find some images of both an unassembled and assembled pad. Check the different items on the pad by clicking on them! </p> -->
         <div class = "mapcontainer">
           <div id = "foaminfo" class = "info" style = "display: none"> The <strong> foam </strong> absorbs a great deal of the impacts from hitting, avoiding the transmission of vibrations to the structure. Furthermore, it also serves a structural purpose, as its what avoids the piezoelectric being sandwiched between the wooden discs. </div>
           <div id = "corkinfo" class = "info" style = "display: none">  The <strong> cork </strong> head is the part that is going to resemble the drum head. It is not suprising that the much different from common, nowadays polyester-based drum heads, but due to its elasticity it suffices to provide a controllable bounce of the sticks. Furthermore, the cork layer helps absorb the impacts of the stick on the pad. </div>
