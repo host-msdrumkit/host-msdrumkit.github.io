@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
 
 /*RESPONSIVENESS SECTION.*/
 
@@ -73,7 +75,7 @@
 .navbar-lg{
   overflow: hidden;
   display: block;
-  background-color: #FDA172;
+  background-color: #ff6700;
   border-radius: 4px;
 
 }
@@ -82,7 +84,7 @@ a.nav-lg, button.nav-sm{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #FDA172;
+    background-color: #ff6700;
     float: left;
     padding: 12px 30px;
 }
@@ -103,7 +105,7 @@ a.nav-lg, button.nav-sm{
 }
 
 a.nav-lg:hover, button.nav-sm:hover, a.dropb:hover{
-    background-color: #DD571C;
+    background-color: #CC460B;
     cursor: pointer;
 }
 
@@ -140,24 +142,25 @@ a.nav-lg:hover, button.nav-sm:hover, a.dropb:hover{
  /*GENERAL BODY ELEMENTS*/
 
 body{
-  background: url("media/background.png") fixed center no-repeat;
-  background-size: 100% 100%;
-  /*background-color: #FFC394;*/
+  /*background: url("media/background.png") fixed center no-repeat;*/
+  /*background-size: 100% 100%;*/
+  background-color: #ffb38a;
   font-family: 'Nunito', sans-serif;
   font-size: 17px;
 }
 
 h1, h2{
   text-align: center;
-  text-decoration: underline;
+  font-family: 'Prosto one', cursive;
 }
 
 h1{
-  color: #ffff;
+  font-size: 40px;
 }
 
 div.piezointro, div.section{
   margin-top: 50px;
+  /*background-color: linen;*/
   background-color: linen;
   border-radius: 50px;
   padding: 20px 10px;
