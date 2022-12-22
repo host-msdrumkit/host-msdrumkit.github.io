@@ -1,5 +1,12 @@
 /*RESPONSIVENESS SECTION.*/
 
+@media (max-width: 1200px) {
+  div.piezointro, div.section {
+    width: 65%;
+  }
+}
+
+
 @media (max-width: 800px) {
   button.nav-sm{
     display: block;
@@ -24,6 +31,12 @@
 
 }
 
+@media (min-width: 1200px){
+  div.piezointro, div.section {
+    width: 50%;
+  }
+}
+
 @media (min-width: 800px){
   .dropdown{
     display: none;
@@ -37,9 +50,6 @@
     display: none;
   }
 
-  div.piezointro, div.section {
-    width: 50%;
-  }
   .mapcontainer{
     padding-left: 40px
   }
@@ -58,8 +68,12 @@
 h1, h2{
   text-align: center;
   text-decoration: underline;
+}
+
+h1{
   color: #ffff;
 }
+
  /*NAVBAR & DROPDOWN MENU*/
 .navbar-lg{
   overflow: hidden;
@@ -178,4 +192,26 @@ div.section p{
 .info{
   text-align: justify;
   margin-bottom: 20px;
+}
+
+.container{
+  justify-content: center;
+}
+
+#comdrumkit{
+  width: 100%;
+  height: auto;
+  display: flex
+}
+
+
+#pztstructure{
+  width: 49.5%;
+  height: 150px;
+}
+
+#piezoelectric-effect{
+  float: right;
+  width: 49.5%;
+  height: 150px;
 }
